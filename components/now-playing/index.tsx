@@ -6,7 +6,7 @@ import Image from 'next/image'
 import { Spotify } from '../icons'
 import iconStyles from '../icons/icons.module.css'
 import styles from './now-playing.module.css'
-import { INowPlaying } from '@interfaces/now-playing' 
+import { INowPlaying } from '@interfaces/now-playing'
 
 export default function NowPlaying({ bigPicture = false }) {
   const { data }: { data?: INowPlaying } = useSWR<INowPlaying>(

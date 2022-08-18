@@ -1,8 +1,6 @@
 import Page from '@components/page'
 import Link from '@components/link'
-import { EDreams, Ensico } from '@components/icons'
 import NowPlaying from '../components/now-playing'
-import iconStyles from '@components/icons/icons.module.css'
 import ViewCounter from '@components/view-counter'
 
 const About = () => {

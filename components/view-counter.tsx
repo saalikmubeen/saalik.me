@@ -4,7 +4,7 @@ import useSWR from 'swr'
 import fetcher from '@lib/fetcher'
 
 export default function ViewCounter({
-  title= 'Views',
+  title = 'Views',
   slug,
   string = true
 }: {

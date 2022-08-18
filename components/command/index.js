@@ -23,7 +23,6 @@ import {
 } from 'cmdk'
 
 import {
-  Afonso,
   ArrowLeft,
   ArrowRight,
   Command as CommandIcon,
