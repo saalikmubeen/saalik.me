@@ -1,5 +1,10 @@
 import admin from 'firebase-admin'
 
+console.log(`1`, process.env.FIREBASE_PRIVATE_KEY)
+
+process.env.FIREBASE_PRIVATE_KEY &&
+  console.log('2', JSON.parse(process.env.FIREBASE_PRIVATE_KEY))
+
 if (!admin.apps.length) {
   admin.initializeApp({
     credential: admin.credential.cert({
