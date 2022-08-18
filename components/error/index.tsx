@@ -7,6 +7,7 @@ import Page from '@components/page'
 import Link from '@components/link'
 import lottie404 from '@components/icons/lottie/404.json'
 import styles from './error.module.css'
+import { ReactNode } from 'react'
 
 const Error = ({ status }: { status: Number }) => {
   const { theme } = useTheme()
@@ -49,7 +50,7 @@ const Error = ({ status }: { status: Number }) => {
         </>
       ) : (
         <section className={styles.section}>
-          <span>{status || '?'}</span>
+          <span>{(status as ReactNode) || '?'}</span>
           <p>An error occurred.</p>
         </section>
       )}
