@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.details {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.details span {
+   color: var(--gray-alpha);
+}
+
+.details div {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerImg {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}

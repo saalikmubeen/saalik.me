@@ -1,0 +1,108 @@
+.nowPlaying {
+  margin-top: 3rem;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.nowPlaying > span:first-child {
+  min-width: fit-content;
+}
+
+.nowPlaying > span {
+  max-width: 34rem;
+}
+
+.nowPlaying > span > b {
+  vertical-align: middle;
+}
+
+.nowPlaying img {
+  margin-left: 0.4rem;
+  float: left;
+  height: 48px;
+  max-width: none !important;
+}
+
+.inline {
+  width: 30px;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.bigIcon {
+  width: 50px;
+  vertical-align: middle;
+}
+
+.bigPicture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bigPicture > span + span > span {
+  display: block;
+  float: right;
+  animation: fadein 2s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 25rem;
+}
+
+.bigPicture > .show > a {
+  margin-left: 0.4rem;
+  margin-right: 1rem;
+}
+
+.bigPicture > .show > a img {
+  width: 80px;
+  vertical-align: middle;
+  border-radius: var(--radius);
+  margin: auto;
+}
+
+.show {
+  animation: fadein 2s;
+  margin-left: 0.5rem;
+  display: flex;
+}
+
+.show > span {
+  vertical-align: middle;
+  margin: auto;
+}
+
+.show > a span {
+  display: flex !important;
+}
+
+div.nowPlaying > .show > a {
+  display: inherit;
+  margin-right: 0.5rem;
+  height: 48px;
+  width: 48px;
+}
+
+div.nowPlaying .artists {
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 48px;
+}
+
+@media (max-width: 370px) {
+  .nowPlaying > span > b {
+    display: none;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

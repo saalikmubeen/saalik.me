@@ -1,0 +1,64 @@
+.wrapper {
+  height: 100%;
+  padding-bottom: var(--small-gap);
+}
+
+.main {
+  max-width: var(--main-content);
+  margin: 0 auto;
+  padding: 0 var(--gap);
+}
+
+.musicYear > h2 {
+  margin-bottom: 0;
+}
+
+.musicYear > h3 {
+  margin-top: 0;
+}
+
+.sidenav {
+  position: fixed;
+  padding: 2rem;
+  top: 50%;
+  transform: translate(-95%, -50%);
+}
+
+.sidenav > ul {
+  list-style: none;
+  height: 40rem;
+  overflow-y: scroll;
+}
+
+.sidenav > ul > li {
+  padding: var(--gap);
+}
+
+.sidenav > ul > li > a {
+  padding: var(--gap);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .musicYear {
+    text-decoration: underline;
+    text-decoration-thickness: .125em;
+    text-underline-offset: 5px;
+    text-decoration-color: var(--gray);
+  }
+
+  .sidenav {
+    background-color: var(--bg);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    padding: 1rem;
+    border-radius: var(--radius);
+  }
+
+  .sidenav > ul {
+    padding: 1rem;
+  }
+}

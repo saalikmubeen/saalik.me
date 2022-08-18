@@ -1,0 +1,20 @@
+.inline {
+  width: 40px;
+  vertical-align: middle;
+  margin-right: 0.2rem;
+}
+
+img.inline {
+  border-radius: var(--radius);
+}
+
+.st0 {
+  fill: #ffffff;
+}
+
+.st1 {
+  fill: none;
+  stroke: #414042;
+  stroke-width: 3.29;
+  stroke-linejoin: round;
+}

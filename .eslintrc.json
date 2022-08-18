@@ -1,0 +1,19 @@
+{
+  "root": true,
+  "extends": [
+    "prettier",
+    "eslint:recommended",
+    "plugin:@next/next/recommended",
+    "next/core-web-vitals"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
+  }
+}
