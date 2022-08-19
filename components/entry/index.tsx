@@ -3,7 +3,6 @@ import { useInView } from 'react-intersection-observer'
 import 'intersection-observer'
 
 import styles from './entry.module.css'
-const imagePrefix = `https://res.cloudinary.com/afonsojramos/image/fetch/q_60,w_1000`
 
 function formateDate(date: Date) {
   var strArray = [
@@ -63,7 +62,7 @@ const Entry = ({
           backgroundImage: image
             ? !inView
               ? 'none'
-              : `url('${imagePrefix}/${encodeURIComponent(image)}')`
+              : `url(${image})`
             : 'none',
           backgroundPosition: position ? position : 'center'
         }}

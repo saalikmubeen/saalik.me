@@ -5,7 +5,7 @@
  **/
 const nextConfig = {
   images: {
-    domains: ['i.scdn.co', 'upload.wikimedia.org']
+    domains: ['i.scdn.co', 'upload.wikimedia.org', 'res.cloudinary.com']
   }
 }
 

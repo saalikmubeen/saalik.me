@@ -35,7 +35,9 @@ import {
   Pencil,
   Search,
   Sparkles,
-  Travel
+  Travel,
+  Moon,
+  Heart
 } from '@components/icons'
 import styles from './command.module.css'
 import headerStyles from '@components/header/header.module.css'
@@ -93,6 +95,10 @@ const CommandMenu = memo(() => {
       f: () => router.push('/music#all-time-top-tracks'),
       a: () => router.push('/music#top-artists'),
       p: () => router.push('/music#playlists'),
+      o: () => router.push('/pictures/hands'),
+      y: () => router.push('/pictures/melancholy'),
+      e: () => router.push('/pictures/emotive'),
+      k: () => router.push('/pictures/hopeless-romantics'),
       // Backspace
       backspace: () => router.back()
     }
@@ -300,9 +306,16 @@ const DefaultItems = () => {
       </Group>
 
       <Group title="Music">
-        <Item value="All time favorite songs" icon={<Music />} keybind="f" />
+        <Item value="All time favorite songs" icon={<Heart />} keybind="f" />
         <Item value="Playlists" icon={<Music />} keybind="p" />
-        <Item value="All time fav artists" icon={<Music />} keybind="a" />
+        <Item value="All time fav artists" icon={<Heart />} keybind="a" />
+      </Group>
+
+      <Group title="Pictures">
+        <Item value="Hand obsession" icon={<Moon />} keybind="o" />
+        <Item value="Melancholy" icon={<Moon />} keybind="y" />
+        <Item value="Emotive" icon={<Moon />} keybind="e" />
+        <Item value="Hopeless Romantics" icon={<Moon />} keybind="k" />
       </Group>
     </>
   )

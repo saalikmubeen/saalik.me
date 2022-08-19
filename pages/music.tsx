@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import useSWR from 'swr'
 import Page from '@components/page'
 import Entry from '@components/entry'
@@ -43,8 +44,13 @@ const Music = () => {
       )}
 
       <NowPlaying bigPicture />
+
+      <blockquote style={{ margin: '15px 0' }}>
+        'People want to hear songs with the words they're afraid to say.'
+      </blockquote>
+
       <article>
-        <h2 id="top-tracks">Songs I love right now</h2>
+        <h4 id="top-tracks">Songs I love right now</h4>
         <div className={entryStyles.grid}>
           {topTracks?.tracks.map((entry: any) => {
             return (
@@ -59,7 +65,7 @@ const Music = () => {
           })}
         </div>
 
-        <h2 id="recently-played">Recently Played</h2>
+        <h4 id="recently-played">Recently Played</h4>
         <div className={entryStyles.grid}>
           {recentlyPlayed?.tracks.map((entry: any) => {
             return (
@@ -75,7 +81,7 @@ const Music = () => {
           })}
         </div>
 
-        <h2 id="all-time-top-tracks">My All Time fav tracks</h2>
+        <h4 id="all-time-top-tracks">My All Time fav tracks</h4>
         <div className={entryStyles.grid}>
           {allTimeTopTracks?.tracks.map((entry: any) => {
             return (
@@ -90,7 +96,7 @@ const Music = () => {
           })}
         </div>
 
-        <h2 id="playlists">My Playlists</h2>
+        <h4 id="playlists">My Playlists</h4>
         <div className={entryStyles.grid}>
           {playlists?.playlists.map((entry: any) => {
             return (
@@ -105,7 +111,7 @@ const Music = () => {
           })}
         </div>
 
-        <h2 id="top-artists">My All Time fav artists</h2>
+        <h4 id="top-artists">My All Time fav artists</h4>
         <div className={entryStyles.grid}>
           {artists?.artists.map((entry: any) => {
             return (

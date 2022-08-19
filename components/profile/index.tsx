@@ -10,8 +10,8 @@ const Profile = ({ me, playlists }: any) => {
         <Image
           className={classes.headerImg}
           src={me.image}
-          width={250}
-          height={250}
+          width={200}
+          height={200}
           alt="Spotify profile Picture"
         />
         <div className={classes.details}>

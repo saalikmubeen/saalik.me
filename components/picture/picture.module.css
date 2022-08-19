@@ -1,0 +1,32 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(calc(3 * var(--big-gap)), 1fr)
+  );
+  grid-gap: 1rem;
+  width: 100%;
+}
+
+.grid > .picture {
+  margin-bottom: 0.3rem;
+}
+
+.picture {
+  width: 100%;
+  display: block;
+  height: calc(3.5 * var(--big-gap));
+  margin-bottom: var(--gap-double);
+  position: relative;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--lighter-gray);
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* .picture:hover {
+    scale: 2;
+} */
