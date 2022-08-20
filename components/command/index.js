@@ -28,7 +28,6 @@ import {
   Command as CommandIcon,
   GitHub,
   Home,
-  Lightbulb,
   LinkedIn,
   Menu,
   Music,
@@ -37,7 +36,10 @@ import {
   Sparkles,
   Travel,
   Moon,
-  Heart
+  Heart,
+  Sun,
+  Spotify,
+  Quote
 } from '@components/icons'
 import styles from './command.module.css'
 import headerStyles from '@components/header/header.module.css'
@@ -93,7 +95,7 @@ const CommandMenu = memo(() => {
       m: () => router.push('/music'),
       i: () => router.push('/ideas'),
       f: () => router.push('/music#all-time-top-tracks'),
-      a: () => router.push('/music#top-artists'),
+      a: () => router.push('/about'),
       p: () => router.push('/music#playlists'),
       o: () => router.push('/pictures/hands'),
       y: () => router.push('/pictures/melancholy'),
@@ -211,6 +213,7 @@ const ThemeItems = () => {
       <Item
         value={theme}
         key={`theme-${theme}`}
+        icon={theme === 'system' ? null : theme === 'dark' ? <Moon /> : <Sun />}
         callback={() => {
           setTheme(theme)
           setOpen(false)
@@ -285,7 +288,8 @@ const DefaultItems = () => {
         <Item value="Quotes" icon={<Quote />} keybind="q" /> */}
         <Item value="World" icon={<Travel viewBox="0 0 44 44" />} keybind="w" />
         <Item value="Music" icon={<Music />} keybind="m" />
-        <Item value="Ideas" icon={<Lightbulb />} keybind="i" />
+        <Item value="About" icon={<Quote />} keybind="a" />
+        {/* <Item value="Ideas" icon={<Lightbulb />} keybind="i" /> */}
       </Group>
 
       <Group title="Social">
@@ -303,19 +307,38 @@ const DefaultItems = () => {
             window.open('https://linkedin.com/in/saalikmubeen', '_blank')
           }
         />
+        <Item
+          value="Spotify"
+          icon={<Spotify color="gray" className={styles.spotify} />}
+          callback={() =>
+            window.open(
+              'https://open.spotify.com/user/thjaa3yh1ootw5bul3q01kjk2',
+              '_blank'
+            )
+          }
+        />
+      </Group>
+
+      <Group title="Source">
+        <Item
+          value="view source code"
+          icon={<GitHub />}
+          callback={() =>
+            window.open('https://github.com/saalikmubeen/saalik.me', '_blank')
+          }
+        />
       </Group>
 
       <Group title="Music">
         <Item value="All time favorite songs" icon={<Heart />} keybind="f" />
         <Item value="Playlists" icon={<Music />} keybind="p" />
-        <Item value="All time fav artists" icon={<Heart />} keybind="a" />
       </Group>
 
       <Group title="Pictures">
-        <Item value="Hand obsession" icon={<Moon />} keybind="o" />
+        <Item value="Hand obsession" icon={<Heart />} keybind="o" />
         <Item value="Melancholy" icon={<Moon />} keybind="y" />
         <Item value="Emotive" icon={<Moon />} keybind="e" />
-        <Item value="Hopeless Romantics" icon={<Moon />} keybind="k" />
+        <Item value="Hopeless Romantics" icon={<Sun />} keybind="k" />
       </Group>
     </>
   )

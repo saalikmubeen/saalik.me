@@ -18,7 +18,7 @@ export default function NowPlaying({ bigPicture = false }) {
     <div className={bigPicture ? styles.bigPicture : styles.nowPlaying}>
       <span>
         <Link
-          href={'https://open.spotify.com/user/1167513964?si=59c88013d20a4da9'}
+          href={'https://open.spotify.com/user/thjaa3yh1ootw5bul3q01kjk2'}
           external
         >
           <Spotify className={bigPicture ? styles.bigIcon : styles.inline} />

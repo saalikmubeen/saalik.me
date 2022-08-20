@@ -213,3 +213,8 @@
     padding-bottom: 160px;
   }
 }
+
+.spotify {
+  height: 24px;
+  fill: grey;
+}

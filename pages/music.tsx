@@ -43,9 +43,9 @@ const Music = () => {
         <Profile me={data.me} playlists={playlists?.playlists.length} />
       )}
 
-      <NowPlaying bigPicture />
+      <NowPlaying bigPicture={false} />
 
-      <blockquote style={{ margin: '15px 0' }}>
+      <blockquote style={{ margin: '20px 0 15px 0px' }}>
         'People want to hear songs with the words they're afraid to say.'
       </blockquote>
 

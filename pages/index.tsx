@@ -15,11 +15,15 @@ const About = () => {
         </p>
 
         <p>
-          Civil Engineer, Software developer,{' '}
+          Civil Engineer,{' '}
+          <Link underline href="/about">
+            Software developer
+          </Link>
+          ,{' '}
           <Link underline href="https://github.com/saalikmubeen" external>
             open-source
           </Link>{' '}
-          and software engineering enthusiast ;{'   '}
+          and software engineering enthusiast;{'   '}
           <Link underline href="/music">
             musicophile,{' '}
           </Link>
@@ -28,9 +32,9 @@ const About = () => {
           </Link>
           , day dreamer;{' '}
           <Link underline href="/world">
-            peripatetic{'  '}
+            peripatetic,{'  '}
           </Link>
-          ,introverted, empathetic,
+          introverted, empathetic,{' '}
           <Link underline href="/pictures/melancholy">
             melancholic{' '}
           </Link>
@@ -38,7 +42,10 @@ const About = () => {
           <Link underline href="/pictures/emotive">
             emotive{' '}
           </Link>
-          by nature.
+          by nature &{' '}
+          <Link underline href="/pictures/hands">
+            obsessed with human hands.{' '}
+          </Link>
         </p>
       </article>
       <NowPlaying />
