@@ -8,12 +8,11 @@ export default async function handler(
 ) {
   const response = await getPlaylists()
   const { items } = await response.json()
-  console.log(items.length)
 
   const playlists = items.map((playlist: any) => ({
     description: playlist.description,
     playlistUrl: playlist.external_urls.spotify,
-    image: playlist.images[0].url,
+    image: playlist.images[0] && playlist.images[0].url,
     name: playlist.name
   }))
 

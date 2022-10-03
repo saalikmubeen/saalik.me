@@ -17,7 +17,7 @@ const Error = ({ status }: { status: Number }) => {
   return (
     <Page title={`${status}` || 'Error'} description={'Error 404'}>
       <Head>
-        <title>404 — Afonso</title>
+        <title>404 — Saalik</title>
       </Head>
 
       {status === 404 ? (
@@ -37,13 +37,12 @@ const Error = ({ status }: { status: Number }) => {
           />
           <h1>This page cannot be found.</h1>
 
-          <blockquote cite="https://afonsojramos.me/">
-            <p>The perfect personal website doesn&apos;t exis-</p>
+          <blockquote cite="https://saalik.me/">
+            <p>The perfect personal website doesn&apos;t exist :) </p>
 
             <footer>
-              — You, before visiting this{' '}
-              <Link external href="https://afonsojramos.me/">
-                <cite>website</cite>
+              <Link external href="https://saalik.me/">
+                <cite>Back to home</cite>
               </Link>
             </footer>
           </blockquote>

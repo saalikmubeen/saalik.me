@@ -94,9 +94,7 @@ const CommandMenu = memo(() => {
       w: () => router.push('/world'),
       m: () => router.push('/music'),
       i: () => router.push('/ideas'),
-      f: () => router.push('/music#all-time-top-tracks'),
       a: () => router.push('/about'),
-      p: () => router.push('/music#playlists'),
       o: () => router.push('/pictures/hands'),
       y: () => router.push('/pictures/melancholy'),
       e: () => router.push('/pictures/emotive'),
@@ -327,11 +325,6 @@ const DefaultItems = () => {
             window.open('https://github.com/saalikmubeen/saalik.me', '_blank')
           }
         />
-      </Group>
-
-      <Group title="Music">
-        <Item value="All time favorite songs" icon={<Heart />} keybind="f" />
-        <Item value="Playlists" icon={<Music />} keybind="p" />
       </Group>
 
       <Group title="Pictures">

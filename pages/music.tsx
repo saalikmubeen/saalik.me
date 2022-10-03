@@ -9,6 +9,7 @@ import entryStyles from '../components/entry/entry.module.css'
 import NowPlaying from '@components/now-playing'
 import Fetcher from '@lib/fetcher'
 import Profile from '@components/profile'
+import ViewCounter from '@components/view-counter'
 
 const Music = () => {
   const { data }: { data?: any } = useSWR<any>('/api/me', Fetcher)
@@ -126,6 +127,7 @@ const Music = () => {
           })}
         </div>
       </article>
+      <ViewCounter slug={'music'} string={true} title="Page views" />
     </Page>
   )
 }

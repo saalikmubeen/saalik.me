@@ -8,6 +8,7 @@ import pictures from '@data/pictures.json'
 import styles from '../../components/picture/picture.module.css'
 import Picture from '@components/picture'
 import Overlay from '@components/picture/overlay'
+import ViewCounter from '@components/view-counter'
 
 const Melancholy = () => {
   const { melanchloic } = pictures
@@ -33,7 +34,7 @@ const Melancholy = () => {
       </div>
 
       <NowPlaying />
-      {/* <ViewCounter slug={'home'} string={true} title="Profile views" /> */}
+      <ViewCounter slug={'melancholy'} string={true} title="Page views" />
     </Page>
   )
 }
