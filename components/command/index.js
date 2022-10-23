@@ -256,6 +256,7 @@ const Group = ({ children, title }) => {
 const DefaultItems = () => {
   // const router = useRouter()
   const { setPages, pages } = useCommandData()
+  const router = useRouter()
 
   return (
     <>
@@ -287,6 +288,11 @@ const DefaultItems = () => {
         <Item value="World" icon={<Travel viewBox="0 0 44 44" />} keybind="w" />
         <Item value="Music" icon={<Music />} keybind="m" />
         <Item value="About" icon={<Quote />} keybind="a" />
+        <Item
+          value="Listen to Taylor's Hits Different"
+          icon={<Music />}
+          callback={() => router.push('/hits-different')}
+        />
         {/* <Item value="Ideas" icon={<Lightbulb />} keybind="i" /> */}
       </Group>
 
@@ -328,7 +334,7 @@ const DefaultItems = () => {
       </Group>
 
       <Group title="Pictures">
-        <Item value="Hand obsession" icon={<Heart />} keybind="o" />
+        <Item value="Human Hands" icon={<Heart />} keybind="o" />
         <Item value="Melancholy" icon={<Moon />} keybind="y" />
         <Item value="Emotive" icon={<Moon />} keybind="e" />
         <Item value="Hopeless Romantics" icon={<Sun />} keybind="k" />

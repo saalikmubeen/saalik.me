@@ -5,7 +5,7 @@ import ViewCounter from '@components/view-counter'
 
 const About = () => {
   return (
-    <Page description="Saalik Mubeen - Software developer, open-source & software engineering enthusiast; musicophile,  poetry and art lover; peripatetic,introverted, empathetic, melancholic & emotive by nature.">
+    <Page description="Saalik Mubeen - Software developer, open-source & software engineering enthusiast.">
       <article>
         <h1>Saalik Mubeen</h1>
 
@@ -42,10 +42,7 @@ const About = () => {
           <Link underline href="/pictures/emotive">
             emotive{' '}
           </Link>
-          by nature &{' '}
-          <Link underline href="/pictures/hands">
-            obsessed with human hands.{' '}
-          </Link>
+          by nature
         </p>
       </article>
       <NowPlaying />

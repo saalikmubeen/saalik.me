@@ -14,6 +14,7 @@ interface ITrack {
   albumUrl: string
   image: string
   url: string
+  songUri: string
 }
 
 interface IArtist {

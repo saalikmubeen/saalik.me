@@ -15,7 +15,7 @@ const ME_ENDPOINT = 'https://api.spotify.com/v1/me'
 const TOP_ARTISTS_ENDPOINT = `https://api.spotify.com/v1/me/top/artists?limit=20&time_range=long_term`
 const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`
 
-const getAccessToken = async (): Promise<{ access_token: string }> => {
+export const getAccessToken = async (): Promise<{ access_token: string }> => {
   const response = await fetch(TOKEN_ENDPOINT, {
     method: 'POST',
     headers: {
