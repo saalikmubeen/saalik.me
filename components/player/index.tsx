@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from './player.module.css'
 
 declare global {
+  // eslint-disable-next-line no-unused-vars
   interface Window {
     onSpotifyWebPlaybackSDKReady: any
     Spotify: any
