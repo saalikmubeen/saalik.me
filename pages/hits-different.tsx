@@ -1,3 +1,4 @@
+import NowPlaying from '@components/now-playing'
 import Page from '@components/page'
 import ViewCounter from '@components/view-counter'
 import getMarkdown from '@lib/get-markdown'
@@ -27,6 +28,7 @@ const HitsDifferent = ({ html }: { html: string }) => {
         <article dangerouslySetInnerHTML={{ __html: html }} />
       </div>
 
+      <NowPlaying />
       <ViewCounter slug={'hitsDifferent'} string={true} title="Page views" />
     </Page>
   )
