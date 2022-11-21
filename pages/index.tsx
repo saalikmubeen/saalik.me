@@ -7,7 +7,7 @@ const About = () => {
   return (
     <Page description="Saalik Mubeen - Software developer, open-source & software engineering enthusiast.">
       <article>
-        <h1>Saalik Mubeen</h1>
+        <h1>I&apos;m Saalik Mubeen</h1>
 
         <p>
           Waiting, against insurmountable odds, for something extraordinary to

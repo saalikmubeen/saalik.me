@@ -2,7 +2,7 @@ import { memo } from 'react'
 import Link from '@components/link'
 
 import styles from './header.module.css'
-import { Logo as LogoIcon } from '@components/icons'
+import { Saalik } from '@components/icons'
 import Command from '@components/command'
 
 const Header = ({ title }: { title?: string }) => {
@@ -10,7 +10,9 @@ const Header = ({ title }: { title?: string }) => {
     <nav className={styles.nav}>
       <div className={styles.header}>
         <Link href="/" aria-label="Navigate Home" className={styles.logo}>
-          <LogoIcon />
+          {/* <LogoIcon /> */}
+          <Saalik strokeWidth="2" className={styles.saalik} />
+          Saalik
         </Link>
 
         {title !== '404' ? (

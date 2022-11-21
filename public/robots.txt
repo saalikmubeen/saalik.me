@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://afonsojramos.me
+Host: https://saalik.me
 
 # Sitemaps
-Sitemap: https://afonsojramos.me/sitemap.xml
+Sitemap: https://saalik.me/sitemap.xml
