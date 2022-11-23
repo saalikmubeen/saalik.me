@@ -1,0 +1,80 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.2rem;
+  align-items: center;
+}
+
+@media (max-width: 680px) {
+    .container {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 1.5rem;
+    }
+  }
+
+.repoWrapper {
+    height: 100%;
+    text-decoration: none;
+    color: var(--fg);
+}
+
+.repository {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem 1.5rem;
+  border-radius: 2px;
+  --repoBg: #2b2a2a;
+  background: var(--repoBg);
+
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
+
+  border-radius: 8px;
+}
+
+:global(html[data-theme='light']) .repository {
+  --repoBg: #fff;
+}
+
+.repository:hover {
+    box-shadow: 0 8px 26px 0 rgba(0, 0, 0, 0.09);
+    transition: 0.3s;
+}
+
+.header {
+    padding: 1rem 0;
+}
+
+.header h3 {
+    font-size: 0.9em;
+    margin: 0;
+    font-weight: normal;
+}
+
+.description {
+    padding: 1rem 0;
+}
+
+.description p {
+    font-size: 16px;
+    line-height: 1.46429em;
+    margin: 0;
+}
+
+.stars {
+    padding: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.stars svg {
+    margin-right: 0.5rem;
+    margin-bottom: 0;
+}
+
+.stars svg:last-child {
+    margin: 0 0.5rem 0 1rem;
+}

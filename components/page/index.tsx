@@ -20,7 +20,9 @@ const Page = ({
   return (
     <div className={styles.wrapper}>
       <Head
-        title={`${title ? `${title} - ` : ''}Saalik Mubeen`}
+        title={`Saalik Mubeen | ${
+          title ? ` ${title}` : ' Software Developer and a day dreamer'
+        }`}
         description={description}
         image={image}
       />

@@ -38,8 +38,7 @@ import {
   Moon,
   Heart,
   Sun,
-  Spotify,
-  Quote
+  Spotify
 } from '@components/icons'
 import styles from './command.module.css'
 import headerStyles from '@components/header/header.module.css'
@@ -94,7 +93,7 @@ const CommandMenu = memo(() => {
       w: () => router.push('/world'),
       m: () => router.push('/music'),
       i: () => router.push('/ideas'),
-      a: () => router.push('/about'),
+      // a: () => router.push('/about'),
       o: () => router.push('/pictures/hands'),
       y: () => router.push('/pictures/melancholy'),
       e: () => router.push('/pictures/emotive'),
@@ -287,7 +286,6 @@ const DefaultItems = () => {
         <Item value="Quotes" icon={<Quote />} keybind="q" /> */}
         <Item value="World" icon={<Travel viewBox="0 0 44 44" />} keybind="w" />
         <Item value="Music" icon={<Music />} keybind="m" />
-        <Item value="About" icon={<Quote />} keybind="a" />
         <Item
           value="Listen to Taylor's Hits Different"
           icon={<Music />}

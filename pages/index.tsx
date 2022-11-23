@@ -2,6 +2,7 @@ import Page from '@components/page'
 import Link from '@components/link'
 import NowPlaying from '../components/now-playing'
 import ViewCounter from '@components/view-counter'
+import OpenSource from '@components/open-source'
 
 const About = () => {
   return (
@@ -16,7 +17,7 @@ const About = () => {
 
         <p>
           Civil Engineer,{' '}
-          <Link underline href="/about">
+          <Link underline href="/blog/software-and-me">
             Software developer
           </Link>
           ,{' '}
@@ -44,6 +45,8 @@ const About = () => {
           </Link>
           by nature
         </p>
+
+        <OpenSource />
       </article>
       <NowPlaying />
       <ViewCounter slug={'home'} string={true} title="Profile views" />
