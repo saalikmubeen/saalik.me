@@ -38,7 +38,8 @@ import {
   Moon,
   Heart,
   Sun,
-  Spotify
+  Spotify,
+  RSS
 } from '@components/icons'
 import styles from './command.module.css'
 import headerStyles from '@components/header/header.module.css'
@@ -328,6 +329,11 @@ const DefaultItems = () => {
           callback={() =>
             window.open('https://github.com/saalikmubeen/saalik.me', '_blank')
           }
+        />
+        <Item
+          value="RSS"
+          icon={<RSS />}
+          callback={() => window.open('/feed.xml', '_blank')}
         />
       </Group>
 
