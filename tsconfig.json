@@ -39,7 +39,7 @@
     "**/*.ts",
     "**/*.tsx", 
     "**/*.js"
-  ],
+, "components/icons/pencil.tsz", "components/icons/play.tsz"  ],
   "exclude": [
     "node_modules"
   ]

@@ -1,4 +1,4 @@
-const Hostelworld = ({ className = null }) => {
+const HostelWorld = ({ className }: { className?: string }) => {
   return (
     <svg viewBox="0 0 150 150" className={className}>
       <path
@@ -9,4 +9,4 @@ const Hostelworld = ({ className = null }) => {
   )
 }
 
-export default Hostelworld
+export default HostelWorld
