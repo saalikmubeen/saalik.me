@@ -1,4 +1,4 @@
-const EDreams = ({ className = {} }) => {
+const EDreams = ({ className }: { className?: string }) => {
   return (
     <svg viewBox="0 -18 100 100" className={className}>
       <g transform="translate(47.7385,-172.99416)" fill="#ffcc00">
