@@ -4,7 +4,15 @@ import useSWR from 'swr'
 import { useTheme } from 'next-themes'
 import fetcher from '@lib/fetcher'
 import styles from './styles.module.css'
-import { ForkDark, ForkWhite, StarDark, StarWhite } from '@components/icons'
+import linkStyles from '../link/link.module.css'
+
+import {
+  ForkDark,
+  ForkWhite,
+  GitHub,
+  StarDark,
+  StarWhite
+} from '@components/icons'
 
 const OpenSource = () => {
   const { data }: { data?: { repos: IRepo[] } } = useSWR<{ repos: IRepo[] }>(
@@ -21,7 +29,11 @@ const OpenSource = () => {
       <div className={styles.container}>
         {data?.repos.map((repo) => {
           return (
-            <a key={repo.id} href={repo.url} className={styles.repoWrapper}>
+            <a
+              key={repo.id}
+              href={repo.homepage || repo.url}
+              className={styles.repoWrapper}
+            >
               <div className={styles.repository}>
                 <div className={styles.header}>
                   <h3>{repo.name}</h3>
@@ -46,6 +58,15 @@ const OpenSource = () => {
                         {repo.forks}
                       </>
                     ))}
+
+                  <a
+                    href={repo.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={linkStyles.gray}
+                  >
+                    <GitHub size={30} />
+                  </a>
                 </div>
               </div>
             </a>

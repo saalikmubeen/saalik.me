@@ -75,6 +75,10 @@
     margin-bottom: 0;
 }
 
-.stars svg:last-child {
+.stars svg:nth-child(2) {
     margin: 0 0.5rem 0 1rem;
+}
+
+.stars a:last-child {
+  margin-left: auto;
 }

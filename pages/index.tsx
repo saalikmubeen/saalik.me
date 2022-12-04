@@ -29,9 +29,9 @@ const About = () => {
             musicophile,{' '}
           </Link>
           <Link underline href="/pictures/hopeless-romantics">
-            poetry & art lover{' '}
+            poetry & art seeker,{' '}
           </Link>
-          , day dreamer;{' '}
+          day dreamer;{' '}
           <Link underline href="/world">
             peripatetic,{'  '}
           </Link>
