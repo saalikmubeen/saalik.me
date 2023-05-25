@@ -13,6 +13,7 @@ import {
   StarDark,
   StarWhite
 } from '@components/icons'
+import Loading from '@components/loading'
 
 const OpenSource = () => {
   const { data }: { data?: { repos: IRepo[] } } = useSWR<{ repos: IRepo[] }>(
@@ -21,6 +22,8 @@ const OpenSource = () => {
   )
 
   const { theme } = useTheme()
+
+  if (!data) return <Loading />
 
   return (
     <div>

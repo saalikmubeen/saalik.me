@@ -9,34 +9,26 @@ import entryStyles from '../components/entry/entry.module.css'
 import NowPlaying from '@components/now-playing'
 import Fetcher from '@lib/fetcher'
 import Profile from '@components/profile'
+import Error from '@components/error'
 import ViewCounter from '@components/view-counter'
 
 const Music = () => {
-  const { data }: { data?: any } = useSWR<any>('/api/me', Fetcher)
-  const { data: topTracks }: { data?: any } = useSWR<any>(
-    '/api/top-tracks',
-    Fetcher
-  )
+  const { data } = useSWR<any>('/api/me', Fetcher)
+  const { data: topTracks } = useSWR<any>('/api/top-tracks', Fetcher)
 
-  const { data: allTimeTopTracks }: { data?: any } = useSWR<any>(
+  const { data: allTimeTopTracks } = useSWR<any>(
     '/api/all-time-top-tracks',
     Fetcher
   )
 
-  const { data: recentlyPlayed }: { data?: any } = useSWR<any>(
-    '/api/recently-played',
-    Fetcher
-  )
+  const { data: recentlyPlayed } = useSWR<any>('/api/recently-played', Fetcher)
 
-  const { data: playlists }: { data?: any } = useSWR<any>(
-    '/api/playlists',
-    Fetcher
-  )
+  const { data: playlists } = useSWR<any>('/api/playlists', Fetcher)
 
-  const { data: artists }: { data?: any } = useSWR<any>(
-    '/api/top-artists',
-    Fetcher
-  )
+  const { data: artists } = useSWR<any>('/api/top-artists', Fetcher)
+
+  // if (error) return <Error title="Error loading data" />
+  if (!data) return <Error title="Loading..." loading />
 
   return (
     <Page title="Music" description="Collection of my spotify music">
@@ -121,7 +113,6 @@ const Music = () => {
                 title={entry.name}
                 image={entry.image}
                 href={entry.url}
-                description={`${entry.followers} followers`}
               />
             )
           })}

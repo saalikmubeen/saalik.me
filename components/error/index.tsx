@@ -6,22 +6,27 @@ import { useTheme } from 'next-themes'
 import Page from '@components/page'
 import Link from '@components/link'
 import lottie404 from '@components/icons/lottie/404.json'
+import lottieloading from '@components/icons/lottie/loading.json'
 import styles from './error.module.css'
-import { ReactNode } from 'react'
 
-const Error = ({ status }: { status: Number }) => {
+const Error = ({ title, loading }: { title?: string; loading?: Boolean }) => {
   const { theme } = useTheme()
   const animationData: JSON =
     theme === 'dark' ? replaceColor('#000000', '#ffffff', lottie404) : lottie404
 
-  return (
-    <Page title={`${status}` || 'Error'} description={'Error 404'}>
-      <Head>
-        <title>404 — Saalik</title>
-      </Head>
+  const loadingAnimationData: JSON =
+    theme === 'dark'
+      ? replaceColor('#000000', '#ffffff', lottieloading)
+      : lottieloading
 
-      {status === 404 ? (
+  return (
+    <Page title={`${title}` || 'Error'} description={'Error 404'}>
+      {title === '404' ? (
         <>
+          <Head>
+            <title>404 — Saalik</title>
+          </Head>
+
           <Lottie
             play
             loop
@@ -49,8 +54,39 @@ const Error = ({ status }: { status: Number }) => {
         </>
       ) : (
         <section className={styles.section}>
-          <span>{(status as ReactNode) || '?'}</span>
-          <p>An error occurred.</p>
+          {loading ? (
+            <Lottie
+              play
+              loop
+              animationData={loadingAnimationData}
+              style={{
+                width: 300,
+                height: 300,
+                margin: '0 auto',
+                marginBottom: '-50px',
+                marginTop: '-50px'
+              }}
+              audioFactory={undefined}
+            />
+          ) : (
+            <>
+              <h3>This definitely should not have happened.</h3>
+
+              <blockquote cite="https://saalik.me/">
+                <p>Going fast makes you focus on what&apos;s important;</p>
+
+                <footer>— Me, trying to find excuses for this 💀 </footer>
+              </blockquote>
+
+              <p>
+                Please go back to the{' '}
+                <Link href="https://saalik.me/" underline>
+                  homepage
+                </Link>{' '}
+                as that is the thing <b>I&apos;m sure</b> is not broken.
+              </p>
+            </>
+          )}
         </section>
       )}
     </Page>

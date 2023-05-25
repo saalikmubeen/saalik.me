@@ -3,12 +3,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--light-gray);
+  flex-direction: column;
 }
 
-.section > span {
-  font-size: 16rem;
-  margin: 0;
-  line-height: normal;
-  font-weight: bold;
-}
+.section blockquote {
+    margin-bottom: 3em;
+  }
+

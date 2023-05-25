@@ -2,11 +2,7 @@ import { Component } from 'react'
 import { NextPageContext } from 'next'
 import Error from '@components/error'
 
-interface Props {
-  status: Number
-}
-
-class E extends Component<Props> {
+class E extends Component<{ status: number }> {
   static getInitialProps({ res, err }: NextPageContext) {
     const status = res ? res.statusCode : err ? err.statusCode : null
     return { status }
@@ -14,7 +10,7 @@ class E extends Component<Props> {
 
   render() {
     const { status } = this.props
-    return <Error status={status} />
+    return <Error title={`${status}`} />
   }
 }
 

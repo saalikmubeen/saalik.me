@@ -18,7 +18,7 @@ const About = () => {
         <p>
           Civil Engineer,{' '}
           <Link underline href="/blog/software-and-me">
-            Software developer
+            Full-Stack Software Engineer
           </Link>
           ,{' '}
           <Link underline href="https://github.com/saalikmubeen" external>
