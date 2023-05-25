@@ -1,6 +1,7 @@
 module.exports = {
   siteUrl: 'https://saalik.me',
   generateRobotsTxt: true,
+  generateIndexSitemap: true,
   transform: async (config, path) => {
     return {
       loc: path,
