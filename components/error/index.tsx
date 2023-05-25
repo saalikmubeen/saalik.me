@@ -9,7 +9,13 @@ import lottie404 from '@components/icons/lottie/404.json'
 import lottieloading from '@components/icons/lottie/loading.json'
 import styles from './error.module.css'
 
-const Error = ({ title, loading }: { title?: string; loading?: Boolean }) => {
+const Error = ({
+  title,
+  loading = false
+}: {
+  title?: string
+  loading?: Boolean
+}) => {
   const { theme } = useTheme()
   const animationData: JSON =
     theme === 'dark' ? replaceColor('#000000', '#ffffff', lottie404) : lottie404
