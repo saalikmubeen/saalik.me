@@ -11,7 +11,7 @@ const Header = ({ title }: { title?: string }) => {
       <div className={styles.header}>
         <Link href="/" aria-label="Navigate Home" className={styles.logo}>
           <Saalik strokeWidth="0" className={styles.saalik} />
-          Saalik
+          aalik
         </Link>
 
         {title !== '404' ? (
