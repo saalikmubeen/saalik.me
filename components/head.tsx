@@ -2,7 +2,7 @@ import NextHead from 'next/head'
 import { useTheme } from 'next-themes'
 
 const defaultOgImage =
-  'https://res.cloudinary.com/dqxiycnxu/image/upload/v1696706334/saalik.me/output-onlinepngtools_ykfgtz.png'
+  'https://res.cloudinary.com/dqxiycnxu/image/upload/v1696706755/saalik.me/og_ndaoxv.png'
 
 const Head = ({
   title = 'Saalik Mubeen - Sofware Engineer',
