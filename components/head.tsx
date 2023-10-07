@@ -1,7 +1,8 @@
 import NextHead from 'next/head'
 import { useTheme } from 'next-themes'
 
-const defaultOgImage = '/favicon_package_v0/android-chrome-512x512.png'
+const defaultOgImage =
+  'https://res.cloudinary.com/dqxiycnxu/image/upload/v1696703795/saalik.me/android-chrome-512x512_qgwdwp.png'
 
 const Head = ({
   title = 'Saalik Mubeen - Sofware Engineer',
