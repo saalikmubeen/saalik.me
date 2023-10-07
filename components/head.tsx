@@ -2,7 +2,7 @@ import NextHead from 'next/head'
 import { useTheme } from 'next-themes'
 
 const defaultOgImage =
-  'https://res.cloudinary.com/dqxiycnxu/image/upload/v1696705696/saalik.me/twitter-logo-512_yat9g9.png'
+  'https://res.cloudinary.com/dqxiycnxu/image/upload/v1696706334/saalik.me/output-onlinepngtools_ykfgtz.png'
 
 const Head = ({
   title = 'Saalik Mubeen - Sofware Engineer',
@@ -52,7 +52,7 @@ const Head = ({
 
       {/* Favicons */}
       <link rel="manifest" href="/favicon_package_v0/manifest.webmanifest" />
-      <meta name="theme-color" content="#ffffff" />
+      <meta name="theme-color" content="#000000" />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
