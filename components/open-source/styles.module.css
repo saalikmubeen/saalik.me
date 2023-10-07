@@ -6,16 +6,16 @@
 }
 
 @media (max-width: 680px) {
-    .container {
-      grid-template-columns: repeat(1, 1fr);
-      grid-gap: 1.5rem;
-    }
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1.5rem;
   }
+}
 
 .repoWrapper {
-    height: 100%;
-    text-decoration: none;
-    color: var(--fg);
+  height: 100%;
+  text-decoration: none;
+  color: var(--fg);
 }
 
 .repository {
@@ -25,7 +25,8 @@
   height: 100%;
   padding: 1rem 1.5rem;
   border-radius: 2px;
-  --repoBg: #2b2a2a;
+  /* --repoBg: #2b2a2a; */
+  --repoBg: rgb(24 24 27);
   background: var(--repoBg);
 
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),
@@ -40,43 +41,43 @@
 }
 
 .repository:hover {
-    box-shadow: 0 8px 26px 0 rgba(0, 0, 0, 0.09);
-    transition: 0.3s;
+  box-shadow: 0 8px 26px 0 rgba(0, 0, 0, 0.09);
+  transition: 0.3s;
 }
 
 .header {
-    padding: 1rem 0;
+  padding: 1rem 0;
 }
 
 .header h3 {
-    font-size: 0.9em;
-    margin: 0;
-    font-weight: normal;
+  font-size: 0.9em;
+  margin: 0;
+  font-weight: normal;
 }
 
 .description {
-    padding: 1rem 0;
+  padding: 1rem 0;
 }
 
 .description p {
-    font-size: 16px;
-    line-height: 1.46429em;
-    margin: 0;
+  font-size: 16px;
+  line-height: 1.46429em;
+  margin: 0;
 }
 
 .stars {
-    padding: 1rem 0;
+  padding: 1rem 0;
   display: flex;
   align-items: center;
 }
 
 .stars svg {
-    margin-right: 0.5rem;
-    margin-bottom: 0;
+  margin-right: 0.5rem;
+  margin-bottom: 0;
 }
 
 .stars svg:nth-child(2) {
-    margin: 0 0.5rem 0 1rem;
+  margin: 0 0.5rem 0 1rem;
 }
 
 .stars a:last-child {
