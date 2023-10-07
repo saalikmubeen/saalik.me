@@ -10,8 +10,7 @@ const Header = ({ title }: { title?: string }) => {
     <nav className={styles.nav}>
       <div className={styles.header}>
         <Link href="/" aria-label="Navigate Home" className={styles.logo}>
-          {/* <LogoIcon /> */}
-          <Saalik strokeWidth="2" className={styles.saalik} />
+          <Saalik strokeWidth="0" className={styles.saalik} />
           Saalik
         </Link>
 

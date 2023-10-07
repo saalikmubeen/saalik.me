@@ -1,8 +1,7 @@
 import NextHead from 'next/head'
 import { useTheme } from 'next-themes'
 
-const defaultOgImage =
-  'https://res.cloudinary.com/dqxiycnxu/image/upload/v1669056607/saalik.me/logo-512x512_dbqj0k.png'
+const defaultOgImage = '/favicon_package_v0/android-chrome-512x512.png'
 
 const Head = ({
   title = 'Saalik Mubeen - Sofware Engineer',
@@ -51,40 +50,33 @@ const Head = ({
       />
 
       {/* Favicons */}
-      <link rel="manifest" href="/favicons/manifest.webmanifest" />
+      <link rel="manifest" href="/favicon_package_v0/manifest.webmanifest" />
       <meta name="theme-color" content="#000000" />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
-        href="/favicons/apple-touch-icon.png"
-      />
-
-      {/* ------------------- */}
-
-      <link
-        rel="apple-touch-icon"
-        sizes="180x180"
-        href="/favicons/apple-touch-icon.png"
+        href="/favicon_package_v0/apple-touch-icon.png"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="32x32"
-        href="/favicons/favicon-32x32.png"
+        href="/favicon_package_v0/favicon-32x32.png"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="16x16"
-        href="/favicons/favicon-16x16.png"
+        href="/favicon_package_v0/favicon-16x16.png"
       />
-      {/* <link rel="manifest" href="/site.webmanifest" /> */}
+      {/* <link rel="manifest" href="/favicon_package_v0/site.webmanifest" /> */}
       <link
         rel="mask-icon"
-        href="/favicons/safari-pinned-tab.svg"
+        href="/favicon_package_v0/safari-pinned-tab.svg"
         color="#5bbad5"
       />
       <meta name="msapplication-TileColor" content="#da532c" />
+      <meta name="theme-color" content="#ffffff" />
 
       {/* ------------------------------------- */}
 
@@ -94,30 +86,18 @@ const Head = ({
           <link
             rel="alternate icon"
             type="image/png"
-            href="/favicons/dark.png"
+            href="/favicon_package_v0/dark.png"
             key="dynamic-favicon-alternate"
           />
-          {/* <link
-            rel="icon"
-            type="image/svg+xml"
-            href="/favicons/dark.svg"
-            key="dynamic-favicon"
-          /> */}
         </>
       ) : (
         <>
           <link
             rel="alternate icon"
             type="image/png"
-            href="/favicons/light.png"
+            href="/favicon_package_v0/light.png"
             key="dynamic-favicon-alternate"
           />
-          {/* <link
-            rel="icon"
-            type="image/svg+xml"
-            href="/favicons/light.svg"
-            key="dynamic-favicon"
-          /> */}
         </>
       )}
       {children}
