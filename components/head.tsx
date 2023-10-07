@@ -2,7 +2,7 @@ import NextHead from 'next/head'
 import { useTheme } from 'next-themes'
 
 const defaultOgImage =
-  'https://res.cloudinary.com/dqxiycnxu/image/upload/v1696704266/saalik.me/android-chrome-512x512_g0wtjp.png'
+  'https://res.cloudinary.com/dqxiycnxu/image/upload/v1696705351/saalik.me/logo-twitter-512_gkwlpa.png'
 
 const Head = ({
   title = 'Saalik Mubeen - Sofware Engineer',
@@ -77,7 +77,7 @@ const Head = ({
         color="#5bbad5"
       />
       <meta name="msapplication-TileColor" content="#da532c" />
-      <meta name="theme-color" content="#000000" />
+      <meta name="theme-color" content="#ffffff" />
 
       {/* ------------------------------------- */}
 
