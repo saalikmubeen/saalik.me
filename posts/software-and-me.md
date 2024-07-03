@@ -13,8 +13,6 @@ _I find satisfaction and contentment in learning and seeking knowledge. I have b
 
 I am well versed with wide range of burning technologies like MongoDB, Python, JavaScript, React, Express.js, TypeScript, GraphQL, AWS and more. But I am more inclined towards the **Fullstack JavaScript** and I love **React** among all the technologies and frameworks. Working for a cause, creating world revolutionizing softwares and technologies, learning, teaching, bringing value to people, helping others, anything that makes a world a better place _(and yes earning a lot of money)_ that's something that motivates me I and want to do.
 
-**Started exploring software development:**
-_Mid April 2020_
 
 ### Technologies, frameworks and languages I work with:
 
