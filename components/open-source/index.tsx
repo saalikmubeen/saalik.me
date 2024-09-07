@@ -5,6 +5,7 @@ import { useTheme } from 'next-themes'
 import fetcher from '@lib/fetcher'
 import styles from './styles.module.css'
 import linkStyles from '../link/link.module.css'
+import GitHubCalendar from './github-calander'
 
 import {
   ForkDark,
@@ -76,6 +77,8 @@ const OpenSource = () => {
           )
         })}
       </div>
+
+      <GitHubCalendar />
     </div>
   )
 }

@@ -19,9 +19,10 @@ export default async function handler(
       stars: repo.stargazers_count,
       forks: repo.forks,
       url: repo.html_url,
-      homepage: repo.homepage
+      homepage: repo.homepage,
+      updatedAt: repo.pushed_at
     }))
-    .sort((a: IRepo, b: IRepo) => b.stars - a.stars)
+    .sort((a: IRepo, b: IRepo) => b.stars + b.forks - (a.stars + a.forks))
     .slice(0, 8)
 
   res.setHeader(

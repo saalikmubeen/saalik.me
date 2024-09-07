@@ -27,6 +27,7 @@
     "react": "^18.2.0",
     "react-device-detect": "^2.2.2",
     "react-dom": "^18.2.0",
+    "react-github-calendar": "^4.3.0",
     "react-globe.gl": "^2.22.1",
     "react-intersection-observer": "^9.4.0",
     "react-lottie-player": "^1.4.3",
